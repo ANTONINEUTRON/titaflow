@@ -1,7 +1,5 @@
 use anchor_lang::prelude::*;
 
-use super::RuleAccount;
-
 #[account]
 #[derive(InitSpace)]
 pub struct FlowAccount {
@@ -17,7 +15,7 @@ pub struct FlowAccount {
     pub end_date: Option<i64>,
     pub sender_count: u32,
     pub receiver_count: u32,
-    pub rule_accounts_counts: u8, 
+    pub rule_accounts_counts: u8, // A flow with 0 rule just have a token account created for the flow
     pub status: FlowStatus,
     pub bump: u8,
 }

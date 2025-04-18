@@ -1,8 +1,6 @@
 use anchor_lang::prelude::*;
 
 use crate::utils::{verify_merkle_proof, MerkleProof};
-// use crate::states::milestone::{Milestone, EscrowStep};
-// use crate::utils::merkle::{verify_merkle_proof, MerkleProof};
 
 #[account]
 #[derive(InitSpace)]
